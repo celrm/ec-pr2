@@ -1,0 +1,11 @@
+13:20:47 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3944	    124	      4	   4072	    fe8	pr2.elf
+'Finished building: pr2.siz'
+' '
+
+13:20:47 Build Finished (took 358ms)
+

@@ -1,0 +1,366 @@
+12:32:48 **** Clean-only build of configuration Debug for project pr2 ****
+cs-make clean 
+cs-rm -rf  pr2.siz  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o  ./D8Led.d ./button.d ./gpio.d ./leds.d ./main.d ./utils.d  pr2.hex  pr2.lst  ./init.d  pr2.elf
+' '
+12:32:50 **** Build of configuration Debug for project pr2 ****
+cs-make all 
+'Building file: ../D8Led.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="D8Led.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"D8Led.d" -MT"D8Led.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "D8Led.o" "../D8Led.c"
+'Finished building: ../D8Led.c'
+' '
+'Building file: ../button.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="button.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"button.d" -MT"button.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "button.o" "../button.c"
+'Finished building: ../button.c'
+' '
+'Building file: ../gpio.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="gpio.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"gpio.d" -MT"gpio.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "gpio.o" "../gpio.c"
+'Finished building: ../gpio.c'
+' '
+'Building file: ../init.S'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="init.o.lst" -c -fmessage-length=0 -MMD -MP -MF"init.d" -MT"init.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "init.o" "../init.S"
+'Finished building: ../init.S'
+' '
+'Building file: ../leds.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="leds.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"leds.d" -MT"leds.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "leds.o" "../leds.c"
+'Finished building: ../leds.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building file: ../utils.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="utils.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"utils.d" -MT"utils.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "utils.o" "../utils.c"
+'Finished building: ../utils.c'
+' '
+'Building target: pr2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"U:\hlocal\pr2\ld_script.ld" -nostartfiles -Wl,-Map,pr2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pr2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: pr2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pr2.elf  "pr2.hex"
+'Finished building: pr2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pr2.elf > "pr2.lst"
+'Finished building: pr2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3984	    120	      8	   4112	   1010	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:34:49 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3984	    120	      8	   4112	   1010	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:44:44 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pr2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"U:\hlocal\pr2\ld_script.ld" -nostartfiles -Wl,-Map,pr2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pr2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: pr2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pr2.elf  "pr2.hex"
+'Finished building: pr2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pr2.elf > "pr2.lst"
+'Finished building: pr2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:44:50 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:45:09 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:45:13 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:48:12 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Building file: ../button.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="button.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"button.d" -MT"button.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "button.o" "../button.c"
+'Finished building: ../button.c'
+' '
+'Building target: pr2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"U:\hlocal\pr2\ld_script.ld" -nostartfiles -Wl,-Map,pr2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pr2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: pr2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pr2.elf  "pr2.hex"
+'Finished building: pr2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pr2.elf > "pr2.lst"
+'Finished building: pr2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:48:20 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:48:27 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:49:04 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3976	    120	      8	   4104	   1008	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:53:31 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: pr2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"U:\hlocal\pr2\ld_script.ld" -nostartfiles -Wl,-Map,pr2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pr2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: pr2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pr2.elf  "pr2.hex"
+'Finished building: pr2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pr2.elf > "pr2.lst"
+'Finished building: pr2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3984	    120	      8	   4112	   1010	pr2.elf
+'Finished building: pr2.siz'
+' '
+12:53:38 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3984	    120	      8	   4112	   1010	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:16:22 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Building file: ../D8Led.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="D8Led.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"D8Led.d" -MT"D8Led.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "D8Led.o" "../D8Led.c"
+../D8Led.c: In function 'D8Led_hola':
+../D8Led.c:100:2: warning: large integer implicitly truncated to unsigned type
+../D8Led.c:102:2: warning: large integer implicitly truncated to unsigned type
+'Finished building: ../D8Led.c'
+' '
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'loop':
+../main.c:58:4: warning: implicit declaration of function 'D8Led_hola'
+'Finished building: ../main.c'
+' '
+'Building target: pr2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"U:\hlocal\pr2\ld_script.ld" -nostartfiles -Wl,-Map,pr2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pr2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: pr2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pr2.elf  "pr2.hex"
+'Finished building: pr2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pr2.elf > "pr2.lst"
+'Finished building: pr2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    124	      4	   4068	    fe4	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:16:58 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    124	      4	   4068	    fe4	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:17:06 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3940	    124	      4	   4068	    fe4	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:18:29 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'loop':
+../main.c:59:4: warning: implicit declaration of function 'D8Led_hola'
+'Finished building: ../main.c'
+' '
+'Building target: pr2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"U:\hlocal\pr2\ld_script.ld" -nostartfiles -Wl,-Map,pr2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pr2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: pr2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pr2.elf  "pr2.hex"
+'Finished building: pr2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pr2.elf > "pr2.lst"
+'Finished building: pr2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3948	    124	      4	   4076	    fec	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:18:37 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3948	    124	      4	   4076	    fec	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:19:41 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3948	    124	      4	   4076	    fec	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:19:51 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3948	    124	      4	   4076	    fec	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:20:05 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Building file: ../main.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -O0 -Wall -Wa,-adhlns="main.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"main.d" -MT"main.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "main.o" "../main.c"
+../main.c: In function 'loop':
+../main.c:55:4: warning: implicit declaration of function 'D8Led_hola'
+'Finished building: ../main.c'
+' '
+'Building target: pr2.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"U:\hlocal\pr2\ld_script.ld" -nostartfiles -Wl,-Map,pr2.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pr2.elf"  ./D8Led.o ./button.o ./gpio.o ./init.o ./leds.o ./main.o ./utils.o   
+'Finished building target: pr2.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pr2.elf  "pr2.hex"
+'Finished building: pr2.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pr2.elf > "pr2.lst"
+'Finished building: pr2.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3944	    124	      4	   4072	    fe8	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:20:13 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3944	    124	      4	   4072	    fe8	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:20:25 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3944	    124	      4	   4072	    fe8	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:20:41 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3944	    124	      4	   4072	    fe8	pr2.elf
+'Finished building: pr2.siz'
+' '
+13:20:47 **** Incremental Build of configuration Debug for project pr2 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pr2.elf
+   text	   data	    bss	    dec	    hex	filename
+   3944	    124	      4	   4072	    fe8	pr2.elf
+'Finished building: pr2.siz'
+' '
